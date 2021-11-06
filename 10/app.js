@@ -2,8 +2,8 @@ var math = require('./math');
 
 var fs = require('fs');
 
-var a = fs.readFileSync(process.argv[2]);
-var b = fs.readFileSync(process.argv[3]);
+var a = JSON.parse(fs.readFileSync(process.argv[2]));
+var b = JSON.parse(fs.readFileSync(process.argv[3]));
 
 const resultAdd = 'a + b = ' + math.add(a, b);
 const resultSub = 'a - b = ' + math.sub(a, b);

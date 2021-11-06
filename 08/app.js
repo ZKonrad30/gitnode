@@ -2,8 +2,8 @@ var math = require('./math');
 
 var fs = require('fs');
 
-var a = fs.readFileSync('a.txt');
-var b = fs.readFileSync('b.txt');
+var a = JSON.parse(fs.readFileSync('a.txt'));
+var b = JSON.parse(fs.readFileSync('b.txt'));
 
 
 const resultAdd = 'a + b = ' + math.add(a, b);

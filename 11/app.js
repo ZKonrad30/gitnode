@@ -10,8 +10,8 @@ if (process.argv[2,3] == undefined) {
     process.exit();
 }
 
-var a = fs.readFileSync(process.argv[2]);
-var b = fs.readFileSync(process.argv[3]);
+var a = JSON.parse(fs.readFileSync(process.argv[2]));
+var b = JSON.parse(fs.readFileSync(process.argv[3]));
 
 
 
