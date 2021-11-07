@@ -2,9 +2,10 @@ var math = require('./math');
 
 var fs = require('fs');
 
-var a = JSON.parse(fs.readFileSync('a.txt'));
-var b = JSON.parse(fs.readFileSync('b.txt'));
-
+// var a = JSON.parse(fs.readFileSync('a.txt'));
+// var b = JSON.parse(fs.readFileSync('b.txt'));
+var a = Number(fs.readFileSync('a.txt'));
+var b = Number(fs.readFileSync('b.txt'));
 
 const resultAdd = 'a + b = ' + math.add(a, b);
 const resultSub = 'a - b = ' + math.sub(a, b);
